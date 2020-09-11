@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+
+* {
+  font-family: 'Long Cang', cursive;
+}
+
+::selection {
+  font-family: 'Long Cang', cursive;
+}
