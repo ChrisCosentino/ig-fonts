@@ -1,9 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
-  font-family: 'Long Cang', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
 }
 
-::selection {
-  font-family: 'Long Cang', cursive;
+.sidebar {
+  /* background-color: green; */
+  overflow-y: auto;
+  border: 1px solid lightgray;
+}
+
+.preview {
+  /* background-color: coral; */
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-left: none;
+}
+
+.navbar {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 91vh;
+}
+
+.edit-container {
+  padding: 20px;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* border-bottom: 1px solid lightgray; */
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.text-edit {
+  background-color: #f3f3f3;
+  border: none;
+  width: 100%;
+  resize: none;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.fonts-container {
+  /* background-color: firebrick; */
+  padding: 5px 0px;
+}
+
+.font-container {
+  padding: 010px 20px;
+  /* background-color: yellow; */
+  /* margin: 5px; */
+  overflow-wrap: break-word;
+  border-top: 1px solid lightgray;
+}
+
+.font-container:hover {
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+
+.font-name {
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.font-text {
+}
+
+.btn {
+  border: none;
+  padding: 5px;
+  background-color: transparent;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.meta {
+  font-size: 0.8rem;
+  padding: 0px 20px;
+  color: darkgray;
+  font-weight: 300;
+}
+
+.copied {
+  background-color: green;
+}
+
+.copied:hover {
+  background-color: green;
 }
