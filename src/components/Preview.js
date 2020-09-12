@@ -20,7 +20,7 @@ const Preview = () => {
             </div>
           </div>
           <div className='insta-bio'>{textContext.selected}</div>
-          <a href='#' className='insta-bio-link'>
+          <a href='https://www.thecosentino.com' className='insta-bio-link'>
             https://thecosentino.com
           </a>
 
