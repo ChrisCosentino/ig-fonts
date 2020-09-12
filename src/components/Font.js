@@ -6,6 +6,7 @@ import TextContext from '../context/text/textContext';
 const Font = ({ element }) => {
   const [copied, setCopied] = useState(false);
   const textContext = useContext(TextContext);
+  const [selectedFont, setSelectedFont] = useState(false);
 
   // Util func
   const delay = (ms) => new Promise((res) => setTimeout(res, ms));
@@ -18,8 +19,16 @@ const Font = ({ element }) => {
     })();
   }, [copied]);
 
+  useEffect(() => {
+    (async () => {
+      await delay(2000);
+      setSelectedFont(false);
+    })();
+  }, [selectedFont]);
+
   // Split the text into letters array. return the string from mapping its unicode number
   const getText = () => {
+    console.log(textContext.text.charCodeAt(0));
     const letters = textContext.text.split('');
     let uni = '';
     letters.forEach((el) => {
@@ -28,8 +37,16 @@ const Font = ({ element }) => {
     return uni;
   };
 
+  const handleFont = () => {
+    textContext.setSelected(getText());
+    setSelectedFont(true);
+  };
+
+  let classname = selectedFont
+    ? 'font-container selected-container'
+    : 'font-container';
   return (
-    <div className='font-container'>
+    <div className={classname} onClick={handleFont}>
       <div className='font-name'>{element.name}</div>
 
       <div className='font-text'>{getText()}</div>
