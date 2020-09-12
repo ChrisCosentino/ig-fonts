@@ -7,7 +7,7 @@ import { SET_TEXT } from '../types';
 
 const TextState = (props) => {
   const initialState = {
-    text: '',
+    text: 'this is a great font generator',
   };
 
   const [state, dispatch] = useReducer(TextReducer, initialState);

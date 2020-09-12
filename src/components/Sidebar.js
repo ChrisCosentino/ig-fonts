@@ -20,6 +20,7 @@ const Sidebar = () => {
           className='text-edit'
           rows='4'
           placeholder='Enter text here...'
+          value={textContext.text}
         />
       </div>
       <div className='meta'>Click to preview</div>

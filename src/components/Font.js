@@ -7,13 +7,18 @@ const Font = ({ element }) => {
   const [copied, setCopied] = useState(false);
   const textContext = useContext(TextContext);
 
+  // Util func
+  const delay = (ms) => new Promise((res) => setTimeout(res, ms));
+
+  // When the copied state changes, wait seconds then set copied to false, mainly for the UX
   useEffect(() => {
-    setTimeout(function () {
-      console.log('hi');
-    }, 5000);
-    setCopied(false);
+    (async () => {
+      await delay(2000);
+      setCopied(false);
+    })();
   }, [copied]);
 
+  // Split the text into letters array. return the string from mapping its unicode number
   const getText = () => {
     const letters = textContext.text.split('');
     let uni = '';
