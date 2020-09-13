@@ -10,7 +10,9 @@
 
 :root {
   --color-light-grey: #f5f8fc;
-  --color-blue: blue;
+  --color-blue: #1a73e9;
+  --color-dark-black: #141414;
+  --color-light-black: #252525;
 }
 
 .sidebar {
@@ -71,7 +73,7 @@
 }
 
 .text-edit {
-  background-color: #f3f3f3;
+  background-color: var(--color-light-grey);
   border: none;
   width: 100%;
   resize: none;
@@ -285,4 +287,45 @@
     max-width: 400px;
     height: 650px;
   }
+}
+
+.footer {
+  height: 113px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  font-weight: 300;
+  font-size: 1.2rem;
+  background-color: var(--color-light-black);
+  color: white;
+}
+
+/* a {
+  text-decoration: none;
+  color: var(--color-blue);
+  font-size: 1.2rem;
+  font-weight: 400;
+} */
+
+.external-link:hover {
+  text-decoration: underline;
+}
+.external-link {
+  margin-left: 7px;
+  text-decoration: none;
+  color: var(--color-blue);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.insta-bio-link {
+  text-decoration: none;
+  color: var(--color-blue);
+  font-weight: 500;
+}
+
+.insta-bio-link:hover {
+  text-decoration: underline;
 }

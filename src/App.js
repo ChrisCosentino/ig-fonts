@@ -7,6 +7,7 @@ import Preview from './components/Preview';
 import Navbar from './components/Navbar';
 
 import './styles.css';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Sidebar />
           <Preview />
         </div>
+        <Footer />
       </div>
     </TextState>
   );
