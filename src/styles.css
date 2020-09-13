@@ -303,13 +303,6 @@
   width: 100%;
 }
 
-/* a {
-  text-decoration: none;
-  color: var(--color-blue);
-  font-size: 1.2rem;
-  font-weight: 400;
-} */
-
 .external-link:hover {
   text-decoration: underline;
 }
