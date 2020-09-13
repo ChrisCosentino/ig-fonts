@@ -247,3 +247,40 @@
   letter-spacing: 1px;
   font-weight: 900;
 }
+
+/* Mobile devices ---------------*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 810px) {
+  .content-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+  .sidebar {
+    /* height: 100vh; */
+    width: 100%;
+    min-width: 0px;
+  }
+
+  .preview-section {
+  }
+
+  .preview {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    /* padding-left: 0;
+    padding-right: 0; */
+  }
+  .insta-container {
+    max-width: 400px;
+    height: 650px;
+  }
+
+  .twitter-container {
+    max-width: 400px;
+    height: 650px;
+  }
+}
