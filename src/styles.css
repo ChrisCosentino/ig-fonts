@@ -91,7 +91,8 @@
   padding: 010px 20px;
   /* background-color: yellow; */
   /* margin: 5px; */
-  overflow-wrap: break-word;
+  /* overflow-wrap: break-word; */
+  word-break: break-all;
   border-top: 1px solid lightgray;
 }
 
@@ -198,6 +199,7 @@
 
 .insta-bio {
   padding: 20px;
+  padding-bottom: 5px;
 }
 
 .insta-bio-link {
