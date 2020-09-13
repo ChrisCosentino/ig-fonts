@@ -19,7 +19,7 @@ const App = () => {
           <Sidebar />
           <Preview />
         </div>
-        <Ads />
+        {/* <Ads /> */}
         <Footer />
       </div>
     </TextState>
