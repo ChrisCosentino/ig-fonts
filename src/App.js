@@ -8,7 +8,7 @@ import Navbar from './components/Navbar';
 
 import './styles.css';
 import Footer from './components/Footer';
-import Ads from './components/Ads';
+// import Ads from './components/Ads';
 
 const App = () => {
   return (
