@@ -63,6 +63,10 @@
   align-items: flex-start;
   justify-content: center;
   /* border-bottom: 1px solid lightgray; */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 
 .subtitle {
