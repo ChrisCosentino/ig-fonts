@@ -7,8 +7,8 @@ import { SET_TEXT, SET_SELECTED } from '../types';
 
 const TextState = (props) => {
   const initialState = {
-    text: 'this is a great font generator',
-    selected: '',
+    text: 'Type your own text to see changes...',
+    selected: 'Type your own text to see changes...',
   };
 
   const [state, dispatch] = useReducer(TextReducer, initialState);
