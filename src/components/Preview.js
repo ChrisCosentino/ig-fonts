@@ -11,17 +11,17 @@ const Preview = () => {
 
       <div className='preview'>
         <div className='insta-container'>
-          <div className='insta-nav'>Insta Font</div>
+          <div className='insta-nav'>BioFonts</div>
           <div className='insta-headline'>
             <div className='round-circle'></div>
             <div className='insta-info'>
-              <div className='insta-name'>IG Fontz</div>
+              <div className='insta-name'>Bio Fonts</div>
               <div className='edit-profile'>Edit Profile</div>
             </div>
           </div>
           <div className='insta-bio'>{textContext.selected}</div>
-          <a href='https://www.thecosentino.com' className='insta-bio-link'>
-            https://thecosentino.com
+          <a href='https://www.biofonts.ca' className='insta-bio-link'>
+            biofonts.ca
           </a>
 
           <div className='insta-feed'>
